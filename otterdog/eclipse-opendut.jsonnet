@@ -2,8 +2,10 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('automotive.opendut', 'eclipse-opendut') {
   settings+: {
-    description: "Test Electronic Control Units around the world in a transparent network.",
     name: "Eclipse openDuT",
+    description: "Test Electronic Control Units around the world in a transparent network.",
+    discussion_source_repository: "eclipse-opendut/opendut",
+    has_discussions: true,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
